@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Weather & Tourist Places Explorer
+    link(rel='stylesheet', href='/styles.css')
+  body
+    h1 Weather & Tourist Places Explorer
+    form(action='/explore', method='get')
+      input(type='text', name='location', placeholder='Enter a location')
+      button(type='submit') Explore
+    if error
+      p.error= error
+
+
+        
+  
+  

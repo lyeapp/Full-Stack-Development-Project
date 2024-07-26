@@ -1,0 +1,7 @@
+body {
+  font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table,tr,td,th{
+  border: solid 2px black;
+  border-collapse: collapse;
+}
