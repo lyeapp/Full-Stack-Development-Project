@@ -1,0 +1,18 @@
+extends layout
+
+block content
+ div.struct
+    h1= title
+    h2 Weather Information
+    p Temperature: #{weather.main.temp}°C
+    p Description: #{weather.weather[0].description}
+    p Wind Speed: #{weather.wind.speed} m/s
+
+    h2 Tourist Places
+    ul.places
+        each place in places
+            .results
+                li
+                    h3= place.name
+                    p Category: #{place.categories[0].name}
+                    p Address: #{place.location.address}
